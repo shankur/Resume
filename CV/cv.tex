@@ -1,0 +1,274 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{bibspacing}
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\vspace{-0.5cm}
+\par{\centering{\Huge Ankur \textsc{Sharma}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & Allahabad, India  | 25 March 1991 \\
+\textsc{Address:} & Austr. 38a, 66386 Sankt Ingbert, Saarland, Germany \\
+\textsc{Phone:} & +49 17 3300 7771\\
+\textsc{email:} & \href{mailto:ankur@chainifydb.com}{ankur@chainifydb.com}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Apr 2016 - Current} & Research Assistant at \textsc{Saarland University}, Saarbruecken \\
+                         & Big Data Analytics Group\\ 
+& \footnotesize{Worked on utilizing  main-memory and algorithmic optimizations to improve transaction processing in Relational Databases and Permissioned-Blockchain Systems.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Sep 2013 - Oct 2014} & Student Research Assistant at \textsc{TU} Dresden, Germany \emph{}\\
+                         & Centre for Information Services and High Performance Computing\\ 
+& \footnotesize{Performed performance analysis and  optimization of high performance applications.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{May - July 2013} & Summer Research Intern at \textsc{TU} Dresden, Germany \emph{}\\
+                         & Centre for Information Services and High Performance Computing\\ 
+& \footnotesize{Analyzed performance bottlenecks of Inchworm sequence assembler, and suggested possible optimizations and parallelization of assembly algorithm.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{May - July 2012} & Summer Research Intern at \textsc{IIT} Bombay, India \emph{}\\
+& \footnotesize{Designed and developed a user-friendly tool for editing XML files on android devices.}\\
+\multicolumn{2}{c}{}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+\textsc{Apr 2016 - Current} & Ph.D. in \textsc{Computer Science}, Saarland University, Saarbruecken\\
+& Big Data Analytics Group\\
+Advisor & Prof. Dr. Jens Dittrich\\
+%& Thesis: ``Money is the Root of All Evil - Or is it?'' | \small Advisor: Prof. James \textsc{Smith}\\
+&\\
+
+%------------------------------------------------
+
+\textsc{Oct 2014 - Apr 2016} & Ph.D. (Preparatory Phase) in Saarland University, Saarbruecken \\
+& Saarbruecken Graduate School of Computer Science\\
+&Cummulative GPA: 1.8 (Scale: 1.0 - 5.0, Best GPA: 1.0)\\\
+&\\
+
+%------------------------------------------------
+
+\textsc{Oct 2013 - Sep 2014} & Exchange Student at TU Dresden, Germany\\
+&\\
+
+%------------------------------------------------
+
+
+\textsc{Aug 2010 - Sep 2014} & Bachelor of Technology at National Institute of Technology, Sikkim\\
+Thesis & Performance Tuning and Parallelization of Inchworm Sequence Assembler\\
+Advisor & Prof. Dr. Wolfgang Nagel (TU Dresden)\\
+& Cummulative GPA: 9.15/10.0 (Scale: 1.0 - 10.0, Best GPA: 10.0)\\
+&\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships and Awards}
+
+\begin{tabular}{rl}
+\textsc{Oct 2014 - Mar 2016} & Graduate School Scholarship, Saarland University\\
+\textsc{Sep 2014} & Institute's Gold Medal, NIT Sikkim\\
+\textsc{Sep 2014} & Computer Science Department's Gold Medal, NIT Sikkim\\
+\textsc{May} 2013 & DAAD WISE Fellowship\\
+\textsc{May} 2012 & Summer Research Fellowship, IIT Bombay, India\\
+\end{tabular}
+
+\vspace{1cm}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\renewcommand\refname{Publications}
+\setlength\bibitemsep{\baselineskip}
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+\bibliographystyle{unsrt}
+\bibliography{publications}
+\nocite{*}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+\textsc{Hindi} & Mother-tongue\\
+\textsc{English} & Fluent\\
+\textsc{German} & Basic Knowledge\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Programming Skills}
+
+\begin{tabular}{rl}
+Languages & 5000+ LOC: \textsc{Go}, \textsc{C++}, \textsc{Java}\\
+		  & 1000+ LOC: \textsc{C}, \textsc{Javascript}, \textsc{Python}, \textsc{Bash}\\
+		  
+Familiar Technologies & \textsc{git},  \textsc{svn},  \textsc{Spark},  \textsc{flink},  \textsc{Kafka} 
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	REVIEWING ACTIVITY
+%----------------------------------------------------------------------------------------
+\section{Professional Activities}
+\begin{tabular}{rl}
+External Reviewer & VLDB' 16, SIGMOD' 17, CIKM' 17, VLDB' 17 (Demo), VLDB' 18\\
+& SIGMOD' 18, CIKM' 18, BTW' 19
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	REVIEWING ACTIVITY
+%----------------------------------------------------------------------------------------
+\section{Teaching}
+\begin{tabular}{rl}
+Winter Semester 2019/2020 & Teaching Assistant (Database Systems Seminar and Pro-Seminar)\\
+Summer Semester 2019 & Teaching Assistant (Database Systems Seminar)\\
+Winter Semester 2018/2019 & Chief Teaching Assistant (Database Systems Core Lecture)\\
+Summer Semester 2018 & Teaching Assistant (Database Systems Seminar)\\
+Winter Semester 2017/2018 & Teaching Assistant (Database Systems Core Lecture)\\
+Summer Semester 2017 & Chief Teaching Assistant (Database Systems Seminar)\\
+Winter Semester 2016/2017 & Chief Teaching Assistant (Database Systems Core Lecture)
+\end{tabular}
+
+% External Reviewer: VLDB 16, SIGMOD 17, CIKM 17, VLDB 17 Demo, VLDB 18, SIGMOD 18, CIKM 18, BTW19
+
+%----------------------------------------------------------------------------------------
+
+%\newpage
+%
+%%----------------------------------------------------------------------------------------
+%%	GRADE TABLES
+%%----------------------------------------------------------------------------------------
+%
+%\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%Corporate Finance (Valuation) & 25 & 6\\
+%Financial Statement Analysis & 28 & 6\\
+%Statistics & 27 & 6\\
+%Theory of Finance & 26 & 6\\
+%Quantitative Methods for Finance & 30 & 6\\
+%Econometrics & 24 & 6\\
+%Derivatives & 31 & 6\\
+%Management of Financial and Insurance Companies & 30 & 6\\
+%Business Law & 31 & 6\\
+%Investment Banking	& 28 & 6\\ \\		
+%Behavioral Models for Economics and Finance	 & 29 & 6\\
+%Numerical Methods for Finance & 29 & 6\\
+%Advanced Derivatives & 30 & 6\\
+%Fixed Income (Advanced Methods) & 30 & 6\\ \\
+%English Language & 30 &	4\\
+%French Language & 31 &	4\\	
+%Internship & & 8\\		
+%Final Thesis & & 20\\	
+%& Total & 120\\\cline{2-3}
+%&\textsc{Gpa}&\textbf{8.0}
+%\end{tabular}
+%\end{center}
+%\bigskip
+%\hrule
+%\bigskip
+%
+%%------------------------------------------------
+%
+%\bigskip
+%
+%\par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade} & \textsc{Grade Points}\\ 
+%\hline
+%Corporate Financial Strategy & A & 4\\
+%Derivatives & A & 4\\
+%Money, Credit, and Banking & A & 4\\
+%Business Strategy & A- & 3.5\\
+%& &\\\cline{2-3}
+%& \textsc{Gpa} & \textbf{3.875}
+%\end{tabular}
+%\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
