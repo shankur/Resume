@@ -63,7 +63,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\namesection{Ankur}{Sharma}{\href{mailto:ankur@chainifydb.com}{ankur@chainifydb.com} | (+49) 17 33 00 771\\
+\namesection{Ankur}{Sharma}{\href{mailto:inbox.ankur@outlook.com}{inbox.ankur@outlook.com} | (+49) 17 33 00 771\\
 \urlstyle{same}\url{https://bigdata.uni-saarland.de/people/sharma.php}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,7 +72,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.30\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -104,8 +104,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links} 
-Github:// \href{https://github.com/sh-ankur/}{\custombold{sh-ankur}} \\
-LinkedIn://  \href{https://www.linkedin.com/in/ankursh92}{\custombold{ankursh92}} \\
+Github:// \href{https://github.com/sh-ankur/}{\custombold{shankur}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/shankur}{\custombold{shankur}} \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,11 +134,11 @@ Data Structure \& Algorithms\\
 \section{Skills}
 \subsection{Programming}
 \location{5000 lines:}
-C++ \textbullet{}   GO \textbullet{} Java \textbullet{} Python \\
+C++ \textbullet{}   GO \textbullet{} Java \\
 \location{\~ 1000 lines:}
-C \textbullet{} BASH \textbullet{} Javascript \\
+C \textbullet{} BASH \textbullet{} Javascript \textbullet{} Python \\
 \location{Familiar:}
-GIT \textbullet{} SVN \textbullet{} SQL \textbullet{} Spark  \textbullet{} Flink
+GIT \textbullet{} SQL \textbullet{} Docker \textbullet{} Kubernetes
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -148,8 +148,8 @@ GIT \textbullet{} SVN \textbullet{} SQL \textbullet{} Spark  \textbullet{} Flink
 \section{Awards}
 2014 \textbullet{}  Graduate Fellowship \\
 2014 \textbullet{}  Undergraduate Gold Medals \\
-2013 \textbullet{} DAAD WISE Fellowship \\
-2012 \textbullet{} IITB Research Fellowship
+2013 \textbullet{}  DAAD WISE Fellowship \\
+2012 \textbullet{}  IITB Research Fellowship
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -160,29 +160,64 @@ GIT \textbullet{} SVN \textbullet{} SQL \textbullet{} Spark  \textbullet{} Flink
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.68\textwidth}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Saarland University}
+\descript{Postdoctoral Researcher}
+\location{June 2020 - Present | Saarbruecken, Germany}
+As a lead of chainifyDB, I am developing the core, managing our back-end and front-end developers, and also business developers to bring chainifyDB to market by Q3 2021.
+%\vspace{\topsep}
+
+\sectionsep
+
+\runsubsection{Saarland University}
+\descript{Research Assistant}
+\location{April 2016 - June 2020 | Saarbruecken, Germany}
+Worked on the development and optimization of main-memory database systems and permissioned blockchain system under the umbrella of multiple projects for my Ph.D.
+%\vspace{\topsep}
+
+\sectionsep
+\runsubsection{TU Dresden}
+\descript{Undergraduate Research Assistant}
+\location{May 2013 - Sep 2014 | Dresden, Germany}
+Analyzed performance bottlenecks and performed algorithmic optimizations in HPC applications such as Trinity RNA-Seq Assembler.
+
+\sectionsep
+
+%\runsubsection{IIT Bombay}
+%\descript{Undergraduate Research Intern}
+%\location{May 2012 - Jul 2012 | Mumbai, India}
+%Developed lightweight java-based XML parser for in-house Android applications used at IIT Bombay.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     RESEARCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
-\runsubsection{ChainifyDB}
+\runsubsection{chainifyDB}
 \descript{Transform DB into Blockchain System}
-\location{Jan 2019 – Present | Under Submission at SIGMOD'2021}
-We are developing a platform that is capable of transforming an existing Database Infrastructure in a B2B setup into a Blockchain Infrastructure. The goal of this project is to make the blockchain technology much more accessible, without actually adding an all-new blockchain system into the technology stack.
+\location{Jan 2019 – Present | Published at CIDR'2021}
+Designed and developed the distributed architecture of \href{www.chainifydb.com}{chainifyDB} that allows customers to transform their existing database infrastructure into a permissioned 
+blockchain system. chainifyDB ensures zero down-time, end-to-end encryption, and as low as 17\% performance overhead on the underlying database system.
+
 \sectionsep
 
 \runsubsection{Fabric++}
 \descript{Optimizing Permissioned-Blockchain Systems}
 \location{Jan 2018 – Oct 2018 | Published at SIGMOD'2019}
-We integrated MVCC and TransactionReordering in Hyperledger Fabric, which improved transaction throughput by more than 12x for the highly contended workload.
+Integrated MVCC and TransactionReordering into Hyperledger Fabric, improving the transaction throughput by up to 12x for contended workloads.
 \sectionsep
 
 \runsubsection{AnKerDB}
 \descript{Hybrid OLTP/OLAP Processing}
 \location{Apr 2016 – Dec 2017 | Published at PVLDB'2016 and SIGMOD'2018}
-We implemented an efficient mechanism (user-level and inside the Linux) to snapshot the virtual memory area, which is used to extend MVCC to support efficient analytical/transactional workload in main-memory database systems.
+Integrated a new system-call inside Linux-kernel to create snapshots of virtual memory. Designed and developed a prototype main-memory, column-store database system that exploits the snapshot system call, to execute analytical workloads under serializable isolation-level at the cost of read-uncommitted isolation level in MVCC.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PUBLICATIONS
@@ -195,37 +230,6 @@ We implemented an efficient mechanism (user-level and inside the Linux) to snaps
 \bibliography{publications}
 \nocite{*}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Experience}
-
-\runsubsection{Saarland University}
-\descript{Postdoctoral Researcher}
-\location{June 2020 - Present | Saarbruecken, Germany}
-%\vspace{\topsep}
-Transforming the research prototype of ChainifyDB into a market-ready product, while simultaneously being responsible as a Co-Founder for our spin-off \href{www.chainifydb.com}{ChainifyDB} funded with 840,000 EUR by the BMBF.
-\sectionsep
-
-\runsubsection{Saarland University}
-\descript{Research Assistant}
-\location{April 2016 - June 2020 | Saarbruecken, Germany}
-%\vspace{\topsep}
-Developing technology for efficient transaction processing and memory management in Database Systems and Permissioned Blockchain Systems.
-\sectionsep
-
-\runsubsection{TU Dresden}
-\descript{Undergraduate Research Assistant}
-\location{May 2013 - Sep 2014 | Dresden, Germany}
-Developed methods for performance analysis and optimization of HPC applications.
-\sectionsep
-
-%\runsubsection{IIT Bombay}
-%\descript{Undergraduate Research Intern}
-%\location{May 2012 - Jul 2012 | Mumbai, India}
-%Developed lightweight java-based XML parser for in-house Android applications used at IIT Bombay.
 
 \end{minipage} 
 \end{document}
