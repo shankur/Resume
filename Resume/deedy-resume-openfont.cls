@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.0cm, vmargin=0.6cm]{geometry}
+\usepackage[hmargin=1.1cm, vmargin=0.6cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{hyperref}
 \usepackage{titlesec}
@@ -73,7 +73,7 @@ Last Updated on
 \newcommand{\location}[1]{\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
 
 % Section seperators command
-\newcommand{\sectionsep}[0]{\vspace{8pt}}
+\newcommand{\sectionsep}[0]{\vspace{5pt}}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
