@@ -24,18 +24,20 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[a4paper,10pt]{article} % Default font size and paper size
-\usepackage[margin=1in]{geometry}
+\usepackage[top=0.5in,bottom=0.0in, right=0in]{geometry}
 \usepackage{bibspacing}
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
-
+\usepackage[numbers,sort&compress]{natbib}
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
 \usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
-% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+% To reduce the height of the top margin uncomment: 
+\addtolength{\voffset}{-2.1cm}
+\addtolength{\hoffset}{-2cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
@@ -57,45 +59,13 @@
 \par{\centering{\Huge Ankur \textsc{Sharma}}\bigskip\par} % Your name
 
 \section{Personal Data}
-
+\vspace*{0.2cm}
 \begin{tabular}{rl}
 \textsc{Place and Date of Birth:} & Allahabad, India  | 25 March 1991 \\
-\textsc{Address:} & Austr. 38a, 66386 Sankt Ingbert, Saarland, Germany \\
+\textsc{Address:} & Ludwigstr. 17, 66386 Sankt Ingbert, Saarland, Germany \\
 \textsc{Phone:} & +49 17 3300 7771\\
-\textsc{email:} & \href{mailto:ankur@chainifydb.com}{ankur@chainifydb.com}
-\end{tabular}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE 
-%----------------------------------------------------------------------------------------
-
-\section{Work Experience}
-
-\begin{tabular}{r|p{11cm}}
-\textsc{Apr 2016 - Current} & Research Assistant at \textsc{Saarland University}, Saarbruecken \\
-                         & Big Data Analytics Group\\ 
-& \footnotesize{Working on utilizing  main-memory and algorithmic optimizations to improve transaction processing in Relational Databases and Permissioned-Blockchain Systems.}\\
-\multicolumn{2}{c}{} \\
-
-%------------------------------------------------
-
-\textsc{Sep 2013 - Oct 2014} & Student Research Assistant at \textsc{TU} Dresden, Germany \emph{}\\
-                         & Centre for Information Services and High Performance Computing\\ 
-& \footnotesize{Performed performance analysis and  optimization of high parallel HPC applications.}\\
-\multicolumn{2}{c}{} \\
-
-%------------------------------------------------
-
-\textsc{May - July 2013} & Summer Research Intern at \textsc{TU} Dresden, Germany \emph{}\\
-                         & Centre for Information Services and High Performance Computing\\ 
-& \footnotesize{Analyzed performance bottlenecks of Inchworm sequence assembler, and suggested possible optimizations and parallelization of assembly algorithm.}\\
-\multicolumn{2}{c}{} \\
-
-%------------------------------------------------
-
-\textsc{May - July 2012} & Summer Research Intern at \textsc{IIT} Bombay, India \emph{}\\
-& \footnotesize{Designed and developed a user-friendly tool for editing XML files on android devices.}\\
-\multicolumn{2}{c}{}
+\textsc{email:} & \href{mailto:ankur@chainifydb.io}{ankur@chainifydb.io}\\
+\textsc{LinkedIn:}& \href{linkedin.com/in/shankur}{linkedin.com/in/shankur}
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -103,50 +73,105 @@
 %----------------------------------------------------------------------------------------
 
 \section{Education}
-
-\begin{tabular}{rl}	
-\textsc{Apr 2016 - June 2020} & Ph.D. in \textsc{Computer Science}, Saarland University, Saarbruecken\\
-& Big Data Analytics Group\\
-Advisor & Prof. Dr. Jens Dittrich\\
-Grade&Summa Cum Laude (Excellent)\\
-%& Thesis: ``Money is the Root of All Evil - Or is it?'' | \small Advisor: Prof. James \textsc{Smith}\\
-&\\
-
-%------------------------------------------------
-
-\textsc{Oct 2014 - Apr 2016} & Ph.D. (Preparatory Phase) in Saarland University, Saarbruecken \\
-& Saarbruecken Graduate School of Computer Science\\
-Grade&1.8 (Scale: 1.0 - 5.0, Best GPA: 1.0)\\\
-&\\
-
-%------------------------------------------------
-
-\textsc{Oct 2013 - Sep 2014} & Exchange Student at TU Dresden, Germany\\
-&\\
-
-%------------------------------------------------
-
-
-\textsc{Aug 2010 - Sep 2014} & Bachelor of Technology at National Institute of Technology, Sikkim\\
-Thesis & Performance Tuning and Parallelization of Inchworm Sequence Assembler\\
-Advisor & Prof. Dr. Wolfgang Nagel (TU Dresden)\\
-Grade& 9.15 (Scale: 1.0 - 10.0, Best GPA: 10.0)\\
-&\\
-
+\vspace*{0.2cm}
+\begin{tabular}{rp{13cm}}	
+	\textsc{Apr 2016 - June 2020} & Ph.D. in \textsc{Computer Science}, Advisor: Prof. Dr. Jens Dittrich\\
+%	& Big Data Analytics Group, Saarland University\\
+	Thesis& \href{https://publikationen.sulb.uni-saarland.de/handle/20.500.11880/29329}{``Snapshot: Friend or Foe of Data Management -- On Optimizing Transaction}\\
+	&\href{https://publikationen.sulb.uni-saarland.de/handle/20.500.11880/29329}{Processing in Database and Blockchain Systems''}\\
+	Grade&Summa Cum Laude (Excellent)\\
+	&\\
+	
+	%------------------------------------------------
+	
+	\textsc{Oct 2014 - Apr 2016} & Ph.D. (Preparatory Phase)\\
+	& Graduate School of Computer Science, Saarland University\\
+	Grade&1.8 (Scale: 1.0 - 5.0, Best GPA: 1.0)\\\
+	&\\
+	
+%	%------------------------------------------------
+%	
+%	\textsc{Oct 2013 - Sep 2014} & Exchange Student at TU Dresden, Germany\\
+%	&Chair of Distributed and Data-Intensive Computing\\
+%	&\\
+	
+	%------------------------------------------------
+	
+	
+	\textsc{Aug 2010 - Sep 2014} & Bachelor of Technology in \textsc{Computer Science}\\
+	& National Institute of Technology, Sikkim\\
+%	Thesis & Performance Tuning and Parallelization of Inchworm Sequence Assembler\\
+	Grade& 9.15 (Scale: 1.0 - 10.0, Best GPA: 10.0)\\
+	&\\
+	
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
-%	SCHOLARSHIPS AND ADDITIONAL INFO
+%	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
 
-\section{Scholarships and Awards}
+\section{Work Experience}
+\vspace*{0.2cm}
+\begin{tabular}{rp{13cm}}
+\textsc{Mar 2020 - Current} & Technical Lead | Project Leader \\
+& at \href{www.chainifydb.com}{\textsc{chainifyDB}}, incubation project funded by \href{https://www.forschung-it-sicherheit-kommunikationssysteme.de/projekte/chainifydb}{BMBF}\\ 
+& \footnotesize{Responsible for the technical development, leading back-end developers, and managing the business activities to bring chainifyDB to market by Q3 2021.}\\
+\multicolumn{2}{c}{} \\
 
-\begin{tabular}{rl}
-\textsc{Oct 2014 - Mar 2016} & Graduate School Scholarship, Saarland University\\
-\textsc{Sep 2014} & Institute's Gold Medal, NIT Sikkim\\
-\textsc{Sep 2014} & Computer Science Department's Gold Medal, NIT Sikkim\\
-\textsc{May - July 2013} & DAAD WISE Fellowship\\
-\textsc{May - July 2012} & Summer Research Fellowship, IIT Bombay, India\\
+%------------------------------------------------\textbf{}
+	
+\textsc{Apr 2016 - Feb 2020} & Doctoral Research Assistant \\
+                         &  at \textsc{Big Data Analytics Group}, Saarland University\\ 
+& \footnotesize{Worked on the development and optimization of main-memory OLTP and permissioned blockchain systems under the umbrella of several projects for my Ph.D.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Sep 2013 - Oct 2014} & Undergraduate Research Assistant\\
+                         & at \textsc{ZIH}, TU Dresden, Germany \emph{} \\ 
+& \footnotesize{Analyzed performance bottlenecks and performed algorithmic optimizations in HPC applications such as Trinity RNA-Seq Assembler.}\\
+\multicolumn{2}{c}{} \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	PROJECT 
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+\vspace*{0.2cm}
+\begin{tabular}{rp{14.5cm}}
+	\textsc{chainifyDB} & Published at CIDR 2021 \\
+	& \small{Designed and developed the distributed architecture of \href{www.chainifydb.com}{chainifyDB} that allows us to transform a set of existing databases into a 
+		blockchain system ensuring zero down-time, e2e encryption, and only 17\% overhead on the underlying database system.}\\
+	& \texttt{Tech-Stack}: Go, Docker, Kubernetes, gRPC, protobuf, Kafka, SQL, Git, CI/CD, Jira, Test automation, Transaction processing, Public-key infrastructure, Permissioned-blockchain systems\\
+	\multicolumn{2}{c}{} \\
+	
+	%------------------------------------------------\textbf{}
+	
+	\textsc{Fabric++} & Published at SIGMOD 2019 \\ 
+	& \small{Integrated MVCC with early aborts and transaction-reordering into Hyperledger Fabric to improve the transactional throughput by up to 12x for contended workloads.}\\
+		& \texttt{Tech-Stack}: Go, C++, Bash, NodeJS, Docker, gRPC, protobuf, Kafka, Git, Transaction processing, Permissioned-blockchain systems\\
+	\multicolumn{2}{c}{} \\
+	
+	%------------------------------------------------
+	
+	\textsc{AnkerDB} & Published at SIGMOD 2018 and pVLDB 2016\\
+	&\small{Extended Linux-kernel to support virtual memory snapshotting. Developed a prototype main-memory DBMS to exploit snapshotting and reduce the scanning-overhead in MVCC due to random accesses, bringing down the latency by 4x.}\\
+		& \texttt{Tech-Stack}: C, C++, Column-stores, MVCC, Kernel development, Git, Database-internals, Transaction processing, Main-memory systems, Hybrid OLTP/OLAP systems\\
+	\multicolumn{2}{c}{} \\
+
+%%------------------------------------------------
+%
+%\textsc{May - July 2013} & Summer Research Intern at \textsc{TU} Dresden, Germany \emph{}\\
+%                         & Centre for Information Services and High Performance Computing\\ 
+%& \footnotesize{Analyzed performance bottlenecks of Inchworm sequence assembler, and suggested possible optimizations and parallelization of assembly algorithm.}\\
+%\multicolumn{2}{c}{} \\
+%
+%%------------------------------------------------
+%
+%\textsc{May - July 2012} & Summer Research Intern at \textsc{IIT} Bombay, India \emph{}\\
+%& \footnotesize{Designed and developed a user-friendly tool for editing XML files on android devices.}\\
+%\multicolumn{2}{c}{}
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -154,17 +179,32 @@ Grade& 9.15 (Scale: 1.0 - 10.0, Best GPA: 10.0)\\
 %----------------------------------------------------------------------------------------
 
 \section{Patents and Grants}
+\vspace*{0.2cm}
+\begin{tabular}{rp{16cm}}
+	\textsc{Patent} & ,,Secure and Transparent Cross-organization Data Sharing via Permissioned Blockchain Technology.''\\
+	& (Filed provisionally by the Saarland University)\\
+	\textsc{Grant} & EUR 840,000 for 18 months under the ,,StartUpSecure'' program of the BMBF for commercializing \\
+	&the chainifyDB project.
+\end{tabular}
 
-\begin{tabular}{rl}
-\textsc{Patent} & ,,Secure and Transparent Cross-organization Data Sharing via Permissioned\\
-&Blockchain Technology.'' (Filed provisionally by the Saarland University)\\
-\textsc{Grant} & 850,000 Euros for 1 year under the ,,StartUpSecure'' program of the BMBF\\
-& for commercializing the ChainifyDB project.
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships and Awards}
+\vspace*{0.2cm}
+\begin{tabular}{rp{14cm}}
+\textsc{Oct 2014 - Mar 2016} & Graduate School Fellowship, Saarland University\\
+\textsc{Sep 2014} & Institute's Gold Medal, NIT Sikkim (Best grade across all departments)\\
+\textsc{Sep 2014} & Computer Science Gold Medal, NIT Sikkim (Best grade in CS department)\\
+\textsc{May - July 2013} & DAAD WISE Summer Research Fellowship\\
+\textsc{May - July 2012} & Summer Research Fellowship, IIT Bombay, India\\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
+\renewcommand{\bibpreamble}{\vskip0.5cm}
 \renewcommand\refname{Publications}
 \setlength\bibitemsep{\baselineskip}
 %\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
@@ -177,7 +217,7 @@ Grade& 9.15 (Scale: 1.0 - 10.0, Best GPA: 10.0)\\
 %----------------------------------------------------------------------------------------
 
 \section{Languages}
-
+\vspace*{0.2cm}
 \begin{tabular}{rl}
 \textsc{Hindi} & Mother-tongue\\
 \textsc{English} & Fluent\\
@@ -189,36 +229,48 @@ Grade& 9.15 (Scale: 1.0 - 10.0, Best GPA: 10.0)\\
 %----------------------------------------------------------------------------------------
 
 \section{Programming Skills}
-
+\vspace*{0.2cm}
 \begin{tabular}{rl}
-Languages & 5000+ LOC: \textsc{Go}, \textsc{C++}, \textsc{Java}\\
-		  & 1000+ LOC: \textsc{C}, \textsc{Javascript}, \textsc{Python}, \textsc{Bash}\\
+Languages & >5000 LOC: \textsc{Go}, \textsc{C++}\\
+		  & >1000 LOC: \textsc{C}, \textsc{Java}, \textsc{Python}, \textsc{Bash}\\
 		  
-Familiar Technologies & \textsc{git},  \textsc{svn},  \textsc{Spark},  \textsc{flink},  \textsc{Kafka} 
+Familiar Technologies & \textsc{git},  \textsc{svn},  \textsc{SQL},  \textsc{Docker},  \textsc{Kubernetes}, \textsc{gRPC}, \textsc{Database-internals}, \textsc{Apache Kafka}\\
+& \textsc{Hybrid OLTP/OLAP}, \textsc{Permissioned-blockchain systems}
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	REVIEWING ACTIVITY
 %----------------------------------------------------------------------------------------
 \section{Professional Activities}
+\vspace*{0.2cm}
 \begin{tabular}{rl}
 External Reviewer & VLDB' 16, SIGMOD' 17, CIKM' 17, VLDB' 17 (Demo), VLDB' 18\\
-& SIGMOD' 18, CIKM' 18, BTW' 19
+& SIGMOD' 18, CIKM' 18, BTW' 19, SIGMOD' 20, SIGMOD' 21
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
-%	REVIEWING ACTIVITY
+%	RELEVANT COURSES
 %----------------------------------------------------------------------------------------
-\section{Teaching}
+\section{Reference}
+\vspace*{0.2cm}
 \begin{tabular}{rl}
-Winter Semester 2019/2020 & Teaching Assistant (Database Systems Seminar and Pro-Seminar)\\
-Summer Semester 2019 & Teaching Assistant (Database Systems Seminar)\\
-Winter Semester 2018/2019 & Chief Teaching Assistant (Database Systems Core Lecture)\\
-Summer Semester 2018 & Teaching Assistant (Database Systems Seminar)\\
-Winter Semester 2017/2018 & Teaching Assistant (Database Systems Core Lecture)\\
-Summer Semester 2017 & Chief Teaching Assistant (Database Systems Seminar)\\
-Winter Semester 2016/2017 & Chief Teaching Assistant (Database Systems Core Lecture)
+	Available upon request\\
 \end{tabular}
+
+%%----------------------------------------------------------------------------------------
+%%	REVIEWING ACTIVITY
+%%----------------------------------------------------------------------------------------
+%\section{Teaching}
+%\vspace*{0.2cm}
+%\begin{tabular}{rl}
+%Winter Semester 2019/2020 & Teaching Assistant (Database Systems Seminar and Pro-Seminar)\\
+%Summer Semester 2019 & Teaching Assistant (Database Systems Seminar)\\
+%Winter Semester 2018/2019 & Chief Teaching Assistant (Database Systems Core Lecture)\\
+%Summer Semester 2018 & Teaching Assistant (Database Systems Seminar)\\
+%Winter Semester 2017/2018 & Teaching Assistant (Database Systems Core Lecture)\\
+%Summer Semester 2017 & Chief Teaching Assistant (Database Systems Seminar)\\
+%Winter Semester 2016/2017 & Chief Teaching Assistant (Database Systems Core Lecture)
+%\end{tabular}
 
 % External Reviewer: VLDB 16, SIGMOD 17, CIKM 17, VLDB 17 Demo, VLDB 18, SIGMOD 18, CIKM 18, BTW19
 
